@@ -18,11 +18,11 @@ const LoadingScreen = () => {
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
-        className="text-white text-4xl font-bold mb-8"
+        className="text-white text-4xl font-bold mb-8 animate-pulse"
       >
         Loading...
       </motion.div>
-      <div className="w-64 h-4 bg-gray-700 rounded-full overflow-hidden">
+      <div className="w-64 h-4 bg-gray-700 rounded-full overflow-hidden shadow-lg">
         <motion.div
           initial={{ width: 0 }}
           animate={{ width: `${progress}%` }}
