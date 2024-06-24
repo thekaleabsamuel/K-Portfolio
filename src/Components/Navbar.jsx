@@ -19,7 +19,7 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
           >
             <Link to="/" className="text-white font-bold text-xl">
-              Your Portfolio
+              K Portfolio
             </Link>
           </motion.div>
           
