@@ -38,21 +38,21 @@ const Projects = () => {
   // Array of project data
   const projects = [
     {
-      name: "Lemans 5000",
+      name: "The  Lemans 24",
       description: "This is a brief description of Project 1. It showcases my skills in React and TailwindCSS.",
-      image: "https://via.placeholder.com/400x200?text=Project+1",
-      link: "#"
+      image: "https://i.postimg.cc/jjghJhFJ/Screenshot-2024-07-07-at-1-58-18-AM.png",
+      link: "https://www.thelemans24.com/"
     },
     {
       name: "L0vefrequency.com",
       description: "Project 2 is an e-commerce platform built with Next.js and GraphQL.",
-      image: "https://via.placeholder.com/400x200?text=Project+2",
+      image: "https://i.postimg.cc/tJPdwGCh/Screenshot-2024-07-07-at-1-59-54-AM.png",
       link: "#"
     },
     {
       name: "TaylorToThe.Com",
       description: "A mobile app developed using React Native for both iOS and Android platforms.",
-      image: "https://via.placeholder.com/400x200?text=Project+3",
+      image: "https://i.postimg.cc/bNxHRP5P/Screenshot-2024-07-07-at-2-01-07-AM.png",
       link: "#"
     },
     {
