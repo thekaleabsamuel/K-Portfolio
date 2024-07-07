@@ -20,12 +20,12 @@ const ProjectCard = ({ project }) => {
         <p className="text-gray-700 leading-relaxed mb-4">
           {project.description}
         </p>
-        
+        <a
           href={project.link}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300"
-        <a>
+        >
           View Project
         </a>
       </div>
@@ -38,7 +38,7 @@ const Projects = () => {
   // Array of project data
   const projects = [
     {
-      name: "The  Lemans 24",
+      name: "The Lemans 24",
       description: "This is a brief description of Project 1. It showcases my skills in React and TailwindCSS.",
       image: "https://i.postimg.cc/jjghJhFJ/Screenshot-2024-07-07-at-1-58-18-AM.png",
       link: "https://www.thelemans24.com/"
@@ -58,8 +58,8 @@ const Projects = () => {
     {
       name: "ThriveOnADime",
       description: "A mobile app developed using React Native for both iOS and Android platforms.",
-      image: "https://via.placeholder.com/400x200?text=Project+3",
-      link: "#"
+      image: "https://i.postimg.cc/bvWthV5L/Screenshot-2024-07-07-at-2-06-30-AM.png",
+      link: ""
     }
     // Add more projects as needed
   ];
