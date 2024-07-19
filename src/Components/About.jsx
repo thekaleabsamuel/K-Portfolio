@@ -1,15 +1,11 @@
 import React, { Suspense } from 'react';
 import { motion } from 'framer-motion';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
+import { OrbitControls, useGLTF } from '@react-three/drei';
 
-const Cube = () => {
-  return (
-    <mesh>
-      <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color="hotpink" />
-    </mesh>
-  );
+const Model = () => {
+  const { scene } = useGLTF('/src/assets/test.glb');
+  return <primitive object={scene} scale={[1, 1, 1]} />;
 };
 
 const About = () => {
@@ -34,9 +30,9 @@ const About = () => {
             <div className="w-full md:w-1/2 h-64">
               <Canvas>
                 <Suspense fallback={null}>
-                  <ambientLight />
+                  <ambientLight intensity={0.5} />
                   <pointLight position={[10, 10, 10]} />
-                  <Cube />
+                  <Model />
                   <OrbitControls />
                 </Suspense>
               </Canvas>
@@ -49,3 +45,5 @@ const About = () => {
 };
 
 export default About;
+
+useGLTF.preload('/path/to/your/model.glb');
